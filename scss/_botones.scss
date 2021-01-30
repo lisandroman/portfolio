@@ -1,0 +1,50 @@
+/* Botones */
+
+.btnGral{
+    border: none;
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-buttonColor;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 0 $color-darkBrown;
+    transition: ease-out 0.3s;
+    font-size: 12px;
+    letter-spacing: 2px;
+    outline: none;
+}
+
+.btnGralhover{
+    box-shadow: inset 160px 0 0 0 $color-darkBrown;
+    cursor: pointer;
+    color: $color-white;
+}
+
+.sectionDescription__boton {             /* Btn cv - sobremi.html */
+    display: flex;
+    margin: 0 auto;
+    width: 160px;
+    height: 40px;
+    margin-top: 16px;
+    @extend .btnGral;
+}
+
+.sectionDescription__boton:hover {
+    @extend .btnGralhover;
+}   
+
+
+.form__a {                              /* Btn Form "ENVIAR" - contacto.html */
+display: inline-block;
+margin-top: 15px;
+margin-bottom: 10px;
+padding: 10px 30px;
+@extend .btnGral;
+
+}
+
+.form__a:hover {
+@extend .btnGralhover;
+}
+    
+    
+    
